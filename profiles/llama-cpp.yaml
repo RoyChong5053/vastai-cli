@@ -1,0 +1,14 @@
+# Llama.cpp profile
+# Uses Ubuntu base image and installs llama.cpp from source
+
+image: "ubuntu:22.04"
+disk_size: 30
+onstart_cmd: |
+  #!/bin/bash
+  set -e
+  cd /workspace
+  apt-get update && apt-get install -y git build-essential cmake
+  git clone https://github.com/ggerganov/llama.cpp
+  cd llama.cpp
+  make
+env_vars: []

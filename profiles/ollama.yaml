@@ -1,0 +1,10 @@
+description: Ollama LLM serving platform
+disk_size: 32
+env_vars:
+- -e OLLAMA_HOST=0.0.0.0
+image: ollama/ollama:cuda
+name: ollama
+onstart_cmd: ''
+port_forwards:
+- 11434:localhost:11434
+setup_script: null

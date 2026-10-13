@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Virtual environments / venvs
+/.venv/
+*/.venv/
+/venv/
+*/venv/
+env/
+*/env/
+
+# Conda
+/miniforge3/
+/envs/
+
+# Logs
+*.log
+
+# Local state produced by the tools
+instances.json
+price-list.json
+vastai.log
+ssh_vastai.log
+auto-ssh.log
+ssh_agent.log

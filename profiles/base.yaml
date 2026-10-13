@@ -1,0 +1,8 @@
+# Base profile for VastAI instances
+# This provides minimal configuration that can be extended by other profiles
+
+image: "pytorch/pytorch:latest"
+disk_size: 20
+onstart_cmd: "/bin/bash"
+env_vars:
+  - "-e PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
